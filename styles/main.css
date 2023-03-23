@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+}
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 570px;
+  height: 450px;
+  background: url("../images/bg-pattern-top-desktop.svg") top/contain no-repeat;
+  z-index: -1;
+}
+body::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 1148px;
+  height: 711px;
+  background: url("../images/bg-pattern-bottom-desktop.svg") top/contain no-repeat;
+  z-index: -1;
+}
+body main {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+body main h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+body main .reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5em;
+}
+body main .reviews .heading h2 {
+  font-size: calc(15px + 2.7em);
+  letter-spacing: -2px;
+  line-height: 0.85;
+  max-width: 400px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 0.5em;
+}
+body main .reviews .heading p {
+  font-size: calc(15px + 0.25em);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 450px;
+  color: hsl(303, 10%, 53%);
+}
+body main .reviews .ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body main .reviews .ratings .box {
+  background-color: hsl(300, 24%, 96%);
+  width: 450px;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1.2em 2.2em;
+  border-radius: 10px;
+  color: hsl(300, 43%, 22%);
+}
+body main .reviews .ratings .box .stars {
+  display: flex;
+  gap: 0.5em;
+}
+body main .reviews .ratings .box:nth-of-type(2) {
+  margin-left: 50px;
+}
+body main .reviews .ratings .box:nth-of-type(3) {
+  margin-left: 100px;
+}
+body main .testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+body main .testimonials .box {
+  background-color: hsl(300, 43%, 22%);
+  color: #fff;
+  padding: 2.5em 2em;
+  border-radius: 10px;
+  max-width: 350px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body main .testimonials .box .info {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  font-size: calc(15px + 0.1em);
+  margin-bottom: 2em;
+}
+body main .testimonials .box .info img {
+  width: 40px;
+  border-radius: 50%;
+}
+body main .testimonials .box .info .text h4 {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25em;
+}
+body main .testimonials .box .info .text span {
+  color: hsl(333, 80%, 67%);
+}
+body main .testimonials .box p {
+  font-size: calc(15px + 0.1em);
+  line-height: 1.5;
+}
+body main .testimonials .box:nth-of-type(2) {
+  margin-top: 20px;
+}
+body main .testimonials .box:nth-of-type(3) {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 830px) {
+  body {
+    padding: 5em 1.5em;
+  }
+  body::before {
+    background: url("../images/bg-pattern-top-mobile.svg") no-repeat;
+    width: 100%;
+  }
+  body::after {
+    background: url("../images/bg-pattern-bottom-mobile.svg") bottom/cover no-repeat;
+    width: -webkit-fill-available;
+    height: 826px;
+    bottom: 0px;
+  }
+  body main {
+    max-width: 350px;
+    min-width: auto;
+  }
+  body main .reviews {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5em;
+    margin-bottom: 3.5em;
+  }
+  body main .reviews .heading h2 {
+    font-size: calc(15px + 1.8em);
+  }
+  body main .reviews .ratings {
+    width: 100%;
+  }
+  body main .reviews .ratings .box {
+    padding: 1em 1.5em;
+    flex-direction: column;
+    margin: 0 !important;
+    gap: 1em;
+    width: 100%;
+  }
+  body main .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  body main .testimonials .box {
+    margin: 0 !important;
+  }
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
+footer a {
+  color: hsl(333, 80%, 67%);
+}/*# sourceMappingURL=main.css.map */
